@@ -1,1 +1,1 @@
-sudo docker run -i -t joshjdevl/charm-bridge /bin/bash
+sudo docker run -i -t -v /tmp:/shared joshjdevl/charm-bridge /bin/bash
