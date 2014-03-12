@@ -22,7 +22,7 @@ RUN ${NDK_ROOT}/build/tools/make-standalone-toolchain.sh --platform=android-14 -
 ENV PATH ${NDK_ROOT}:$PATH
 ENV ANDROID_NDK_HOME ${NDK_ROOT}
 RUN mkdir -p /installs/charm-crypto-bridge
-RUN cd /installs/charm-crypto-bridge && git clone https://github.com/joshjdevl/charm-crypto
+RUN cd /installs/charm-crypto-bridge && git clone https://github.com/mhlakhani/charm-crypto
 RUN apt-get -y install mercurial
 RUN cd /installs && hg clone https://code.google.com/p/haggle/
 RUN cd /installs/charm-crypto-bridge/charm-crypto/ccb/ccb && git pull
